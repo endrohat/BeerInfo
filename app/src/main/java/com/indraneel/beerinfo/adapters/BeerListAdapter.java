@@ -74,6 +74,9 @@ public class BeerListAdapter extends RecyclerView.Adapter<BeerListAdapter.BeerIt
 
     /** sort the data list on the basis of comparator provided */
     public void sort(Comparator<Beer> comparator) {
+        if(mBeerItems == null) {
+            return;
+        }
         Collections.sort(mBeerItems, comparator);
         notifyDataSetChanged();
     }
