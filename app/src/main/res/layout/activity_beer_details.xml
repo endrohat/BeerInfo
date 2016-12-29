@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.BeerDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_beer_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/beerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Name"
+            android:textSize="18dp"
+            android:textColor="?attr/colorAccent"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/beerTagLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/beerName"
+            android:layout_alignStart="@+id/beerName"
+            android:layout_below="@+id/beerName"
+            android:layout_marginTop="@dimen/beer_details_header_top_margin"
+            android:text="TagLine"
+            android:textSize="16dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/abvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/beerTagLine"
+            android:layout_alignStart="@+id/beerTagLine"
+            android:layout_below="@+id/beerTagLine"
+            android:layout_marginTop="@dimen/beer_details_attribute_separation_margin"
+            android:text="ABV"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/abv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/abvHeader"
+            android:layout_alignStart="@+id/abvHeader"
+            android:layout_below="@+id/abvHeader"
+            android:layout_marginTop="@dimen/beer_details_header_top_margin"
+            android:text="ABV Value" />
+
+        <TextView
+            android:id="@+id/ibuHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/abv"
+            android:layout_alignStart="@+id/abv"
+            android:layout_below="@+id/abv"
+            android:layout_marginTop="@dimen/beer_details_attribute_separation_margin"
+            android:text="IBU"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ibu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ibuHeader"
+            android:layout_alignStart="@+id/ibuHeader"
+            android:layout_below="@+id/ibuHeader"
+            android:layout_marginTop="@dimen/beer_details_header_top_margin"
+            android:text="IBU Value" />
+
+        <TextView
+            android:id="@+id/ebcHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ibu"
+            android:layout_alignStart="@+id/ibu"
+            android:layout_below="@+id/ibu"
+            android:layout_marginTop="@dimen/beer_details_attribute_separation_margin"
+            android:text="EBC"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ebc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ebcHeader"
+            android:layout_alignStart="@+id/ebcHeader"
+            android:layout_below="@+id/ebcHeader"
+            android:layout_marginTop="@dimen/beer_details_header_top_margin"
+            android:text="EBC Value" />
+
+        <TextView
+            android:id="@+id/descriptionHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ebc"
+            android:layout_alignStart="@+id/ebc"
+            android:layout_below="@+id/ebc"
+            android:layout_marginTop="@dimen/beer_details_attribute_separation_margin"
+            android:text="Description"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/descriptionHeader"
+            android:layout_alignStart="@+id/descriptionHeader"
+            android:layout_below="@+id/descriptionHeader"
+            android:layout_marginTop="@dimen/beer_details_header_top_margin"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/firstBrewedHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/description"
+            android:layout_alignStart="@+id/description"
+            android:layout_below="@+id/description"
+            android:layout_marginTop="@dimen/beer_details_attribute_separation_margin"
+            android:text="First Brewed"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/firstBrewed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/firstBrewedHeader"
+            android:layout_alignStart="@+id/firstBrewedHeader"
+            android:layout_below="@+id/firstBrewedHeader"
+            android:layout_marginTop="@dimen/beer_details_header_top_margin"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/foodPairingHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/firstBrewed"
+            android:layout_alignStart="@+id/firstBrewed"
+            android:layout_below="@+id/firstBrewed"
+            android:layout_marginTop="@dimen/beer_details_attribute_separation_margin"
+            android:text="Food Pairing"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/foodPairing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/foodPairingHeader"
+            android:layout_alignStart="@+id/foodPairingHeader"
+            android:layout_below="@+id/foodPairingHeader"
+            android:layout_marginTop="@dimen/beer_details_header_top_margin"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/brewersTipsHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/foodPairing"
+            android:layout_alignStart="@+id/foodPairing"
+            android:layout_below="@+id/foodPairing"
+            android:layout_marginTop="@dimen/beer_details_attribute_separation_margin"
+            android:text="Brewers Tips"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/brewersTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/brewersTipsHeader"
+            android:layout_alignStart="@+id/brewersTipsHeader"
+            android:layout_below="@+id/brewersTipsHeader"
+            android:layout_marginTop="@dimen/beer_details_header_top_margin"
+            android:text="TextView" />
+    </RelativeLayout>
+</ScrollView>
+

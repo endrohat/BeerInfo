@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BeerInfo</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="sort_dialog_title">Sort by</string>
+    <string name="beer_list_activity_name">Beer List</string>
+    <string name="beer_details_activity_name">Beer Details</string>
+    <string name="beer_list_load_unable">Beer list could not be loaded</string>
+    <string name="retry">Retry</string>
+    <string-array name="sort_parameters">
+        <item>ABV (Asc)</item>
+        <item>ABV (Desc)</item>
+        <item>IBU (Asc)</item>
+        <item>IBU (Desc)</item>
+        <item>EBC (Asc)</item>
+        <item>EBC (Desc)</item>
+    </string-array>
+</resources>
